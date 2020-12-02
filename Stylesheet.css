@@ -52,7 +52,6 @@ body {
 }
 
 
-
 @keyframes Fade-in {
     100% {
         opacity: 1;
@@ -115,6 +114,22 @@ body {
               25px 25px rgba(54, 54, 54, 0.1);
 }
 
+@media only screen and (max-width: 600px) {
+    .WorkContainer{
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    .WorkBox{
+        width: 80vw;
+        height: auto;
+    }
+
+    .WorkBox:hover{
+        color: rgb(255, 94, 94);
+    }
+}
 
 .WorkBox img {
     width: 90%;
