@@ -3,41 +3,57 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
+    background:linear-gradient(to bottom, #c04848, #480048);
 }
+.TypeWriter{
+    font-size: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+  }
+ 
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+    to {
+      width: 100%
+    }
+  }
+  
+  @keyframes blinking-cursor {
+    from,
+    to {
+      border-color: transparent
+    }
+    50% {
+      border-color: black;
+    }
+  }
 
 .IntroBox {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color:black;
 }
 
 .Intro {
-    color: #777777;
+    color: black;
 }
 
 .Intro h1 {
-    opacity: 0;
-    animation-name: Fade-in;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 500ms;
-    animation-fill-mode: forwards;
-    font-size: 80px;
     text-align: center;
+    font-size: 85px;
 }
 
 .Intro h2 {
-    color: #ff0038;
+    color: black;
     text-align: center;
-    opacity: 0;
-    animation-name: Fade-in;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 1.2s;
-    animation-fill-mode: forwards;
-    font-size: 50px;
+    
 }
 
 .Intro h3 {
@@ -60,7 +76,7 @@ body {
 
 .Intro a {
     text-decoration: none;
-    color: #ff0038;
+    color: black;
 }
 
 .Intro h3:hover {
@@ -70,7 +86,6 @@ body {
 
 .WorkTitle{
     display: flex;
-    background-color: #ff0038;
     justify-content: center;
     align-items: center;
     font-size: 50px;
@@ -78,7 +93,6 @@ body {
 }
 
 .WorkContainer {
-    background-color: #ff0038;
     display: flex;
     height: 120vh;
     justify-content: space-evenly;
@@ -103,9 +117,9 @@ body {
     animation-fill-mode: forwards;
     height: 400px;
     width: 300px;
-    background-color: black;
+    background-color: #c04848;
     border-radius: 10%;
-    color: #ff0038;
+    color: black;
     text-align: center;
     box-shadow: 5px 5px rgba(54, 54, 54, 0.6),
               10px 10px rgba(54, 54, 54, 0.4),
@@ -115,6 +129,9 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
+    .Intro{
+        padding-top: 25px;
+    }
     .WorkContainer{
         flex-direction: column;
         justify-content: center;
@@ -126,9 +143,6 @@ body {
         height: auto;
     }
 
-    .WorkBox:hover{
-        color: rgb(255, 94, 94);
-    }
 }
 
 .WorkBox img {
@@ -140,8 +154,7 @@ body {
 
 .ContactTitle{
     display: flex;
-    background-color: black;
-    color: #ff0038;
+    color: #clack;
     justify-content: center;
     align-items: center;
     font-size: 50px;
@@ -151,8 +164,7 @@ body {
 .ContactContainer{
     display: flex;
     height: 80vh;
-    background-color: black;
-    color: #ff0038;
+    color: black;
     justify-content: center;
     align-items: center;
 }
