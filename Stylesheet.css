@@ -3,36 +3,8 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background:linear-gradient(to bottom, #c04848, #480048);
+    background: linear-gradient(to bottom, #c04848, #480048);
 }
-.TypeWriter{
-    font-size: 50px;
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid black;
-    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
-  }
- 
-  
-  @keyframes typing {
-    from {
-      width: 0
-    }
-    to {
-      width: 100%
-    }
-  }
-  
-  @keyframes blinking-cursor {
-    from,
-    to {
-      border-color: transparent
-    }
-    50% {
-      border-color: black;
-    }
-  }
 
 .IntroBox {
     height: 100vh;
@@ -50,10 +22,42 @@ body {
     font-size: 85px;
 }
 
+.TypeWriter {
+    font-size: 50px;
+    margin: 0 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid black;
+    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
+}
+
+
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+@keyframes blinking-cursor {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: black;
+    }
+}
+
 .Intro h2 {
     color: black;
     text-align: center;
-    
+
 }
 
 .Intro h3 {
@@ -84,7 +88,7 @@ body {
 }
 
 
-.WorkTitle{
+.WorkTitle {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,28 +126,13 @@ body {
     color: black;
     text-align: center;
     box-shadow: 5px 5px rgba(54, 54, 54, 0.6),
-              10px 10px rgba(54, 54, 54, 0.4),
-              15px 15px rgba(54, 54, 54, 0.3),
-              20px 20px rgba(54, 54, 54, 0.2),
-              25px 25px rgba(54, 54, 54, 0.1);
+        10px 10px rgba(54, 54, 54, 0.4),
+        15px 15px rgba(54, 54, 54, 0.3),
+        20px 20px rgba(54, 54, 54, 0.2),
+        25px 25px rgba(54, 54, 54, 0.1);
 }
 
-@media only screen and (max-width: 600px) {
-    .Intro{
-        padding-top: 25px;
-    }
-    .WorkContainer{
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-        padding-bottom: 10px;
-    }
-    .WorkBox{
-        width: 80vw;
-        height: auto;
-    }
 
-}
 
 .WorkBox img {
     width: 90%;
@@ -152,16 +141,16 @@ body {
     padding-top: 5px;
 }
 
-.ContactTitle{
+.ContactTitle {
     display: flex;
-    color: #clack;
+    color: black;
     justify-content: center;
     align-items: center;
     font-size: 50px;
     height: 20vh;
 }
 
-.ContactContainer{
+.ContactContainer {
     display: flex;
     height: 80vh;
     color: black;
@@ -169,26 +158,49 @@ body {
     align-items: center;
 }
 
-.ContactContainer form{
+.ContactContainer form {
     display: flex;
     flex-direction: column;
 }
 
-.ContactContainer input, .ContactContainer textarea{
-    width: 80vw;;
+.ContactContainer input,
+.ContactContainer textarea {
+    width: 80vw;
+    ;
     color: #ff0038;
 }
-.ContactContainer input{
+
+.ContactContainer input {
     height: 40px;
     background-color: white;
 }
 
-.ContactContainer textarea{
+.ContactContainer textarea {
     height: 100px;
     background-color: white;
 }
 
-.ContactContainer button{
+.ContactContainer button {
     height: 50px;
     width: 20vw;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .Intro {
+        padding-top: 25px;
+    }
+
+    .WorkContainer {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        padding-bottom: 10px;
+    }
+
+    .WorkBox {
+        width: 80vw;
+        height: auto;
+    }
+
 }
