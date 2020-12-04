@@ -2,205 +2,54 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    overflow-x: hidden;
-    background: linear-gradient(to bottom, #c04848, #480048);
-}
-
-.IntroBox {
     height: 100vh;
+    background:  linear-gradient(to left, #00f260, #0575e6);
+}
+
+.Content{
     display: flex;
+    align-items: center;
     justify-content: center;
-    align-items: center;
+    height: 100vh;
 }
-
-.Intro {
-    color: black;
-}
-
-.Intro h1 {
-    text-align: center;
-    font-size: 85px;
-}
-
-.TypeWriter {
-    font-size: 50px;
-    margin: 0 auto;
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid black;
-    animation: typing 3.5s steps(30, end), blinking-cursor .5s step-end infinite;
-}
-
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-@keyframes blinking-cursor {
-
-    from,
-    to {
-        border-color: transparent
-    }
-
-    50% {
-        border-color: black;
-    }
-}
-
-.Intro h2 {
-    color: black;
-    text-align: center;
-
-}
-
-.Intro h3 {
-    text-align: center;
-    opacity: 0;
-    animation-name: Fade-in;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 1.2s;
-    animation-fill-mode: forwards;
-    font-size: 100px;
-}
-
-
-@keyframes Fade-in {
-    100% {
-        opacity: 1;
-    }
-}
-
-.Intro a {
-    text-decoration: none;
-    color: black;
-}
-
-.Intro h3:hover {
-    transform: scale(1.2);
-}
-
-
-.WorkTitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    color: black;
-}
-
-.WorkContainer {
-    display: flex;
-    height: 120vh;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-}
-
-.WorkContainer a {
-    text-decoration: none;
-}
-
-.WorkContainer a:hover {
-    transform: scale(1.2);
-}
-
-.WorkBox {
-    opacity: 0;
-    animation-name: Fade-in;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-    height: 400px;
-    width: 300px;
-    background-color: #c04848;
-    border-radius: 10%;
-    color: black;
-    text-align: center;
-    box-shadow: 5px 5px rgba(54, 54, 54, 0.6),
-        10px 10px rgba(54, 54, 54, 0.4),
-        15px 15px rgba(54, 54, 54, 0.3),
-        20px 20px rgba(54, 54, 54, 0.2),
-        25px 25px rgba(54, 54, 54, 0.1);
-}
-
-
-
-.WorkBox img {
-    width: 90%;
-    height: 75%;
-    border-radius: 10%;
-    padding-top: 5px;
-}
-
-.ContactTitle {
-    display: flex;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    font-size: 50px;
-    height: 20vh;
-}
-
-.ContactContainer {
-    display: flex;
+.MainBox{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 35vw;
     height: 80vh;
-    color: black;
+    border-radius: 10%;
+    display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
-.ContactContainer form {
+.BoxInfo{
     display: flex;
     flex-direction: column;
+    text-align: center;
+    color: rgb(167, 167, 167);
+}
+.BoxInfo h1{
+    color: teal;
 }
 
-.ContactContainer input,
-.ContactContainer textarea {
-    width: 80vw;
-    ;
-    color: #ff0038;
+.BoxInfo img{
+    margin-left: 75px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 2px solid black;
 }
 
-.ContactContainer input {
-    height: 40px;
-    background-color: white;
+.links a{
+    text-decoration: none;
+    color: rgb(167, 167, 167);
 }
 
-.ContactContainer textarea {
-    height: 100px;
-    background-color: white;
+a:hover{
+    transform: scale(1.2);
 }
 
-.ContactContainer button {
-    height: 50px;
-    width: 20vw;
-}
-
-
-@media only screen and (max-width: 600px) {
-    .Intro {
-        padding-top: 25px;
-    }
-
-    .WorkContainer {
-        flex-direction: column;
-        justify-content: center;
-        height: auto;
-        padding-bottom: 10px;
-    }
-
-    .WorkBox {
-        width: 80vw;
-        height: auto;
-    }
-
+.MainBox:hover{
+    transform: scale(1.1);
 }
