@@ -30,11 +30,11 @@ body {
     color: rgb(167, 167, 167);
 }
 .BoxInfo h1{
-    color: teal;
+    color: salmon;
 }
 
 .BoxInfo img{
-    margin-left: 75px;
+    margin-left: 50px;
     height: 150px;
     width: 150px;
     border-radius: 50%;
@@ -48,8 +48,17 @@ body {
 
 a:hover{
     transform: scale(1.2);
+    color: salmon;
 }
 
 .MainBox:hover{
     transform: scale(1.1);
+}
+.BoxInfo a{
+    text-decoration: none;
+    color: rgb(167, 167, 167);
+}
+
+.BoxInfo a:hover{
+    color: salmon;
 }
