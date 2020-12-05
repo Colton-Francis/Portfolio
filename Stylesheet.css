@@ -3,7 +3,7 @@ body {
     padding: 0;
     scroll-behavior: smooth;
     height: 100vh;
-    background:  linear-gradient(to left, #00f260, #0575e6);
+    background:  linear-gradient(to left, #00f260, #0575e6) no-repeat;
 }
 
 .Content{
@@ -29,13 +29,15 @@ body {
     text-align: center;
     color: rgb(167, 167, 167);
     padding: 5px;
+    justify-content: center;
+    align-items: center;
 }
 .BoxInfo h1{
     color: salmon;
 }
 
 .BoxInfo img{
-    margin-left: 35px;
+    display: flex;
     height: 150px;
     width: 150px;
     border-radius: 50%;
