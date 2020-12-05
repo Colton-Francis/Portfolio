@@ -14,8 +14,8 @@ body {
 }
 .MainBox{
     background-color: rgba(0, 0, 0, 0.6);
-    width: 35vw;
-    height: 80vh;
+    min-width: 35vw;
+    min-height: 80vh;
     border-radius: 10%;
     display: flex;
     justify-content: center;
@@ -28,6 +28,7 @@ body {
     flex-direction: column;
     text-align: center;
     color: rgb(167, 167, 167);
+    padding: 5px;
 }
 .BoxInfo h1{
     color: salmon;
