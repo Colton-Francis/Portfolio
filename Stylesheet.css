@@ -2,17 +2,18 @@ body {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
-    height: 100vh;
-    background:  linear-gradient(to left, #00f260, #0575e6) no-repeat;
+    background:  linear-gradient(to left, #00f260, #0575e6);
+    height: 100%;
 }
 
 .Content{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
 }
 .MainBox{
+    margin-top: 15vh;
     background-color: rgba(0, 0, 0, 0.6);
     min-width: 35vw;
     min-height: 80vh;
@@ -68,4 +69,18 @@ body {
 
 .l2{
     margin-left: 50px;
+}
+
+.AboutBox{
+    margin-top: 25vh;
+    margin-bottom:10vh ;
+}
+
+.ProjectBox{
+    margin-top: 25vh;
+    margin-bottom:10vh ;
+}
+
+.ProjectBox a{
+    text-decoration: none;
 }
