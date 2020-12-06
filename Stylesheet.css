@@ -4,6 +4,7 @@ body {
     scroll-behavior: smooth;
     background:  linear-gradient(to left, #00f260, #0575e6);
     height: 100%;
+    overflow-x: hidden;
 }
 
 .Content{
